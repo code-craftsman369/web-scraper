@@ -83,6 +83,60 @@ print(title)
 - Pandasを使ったデータ処理
 - CSVファイルへのデータ保存
 
+## 🆕 最新機能（Day 16-17）
+
+### エラーハンドリング
+
+- リトライ機能（最大3回）
+- タイムアウト対応（10秒）
+- エラーログの表示
+
+### 複数サイト対応
+
+- Yahoo!ニュース
+- NHK NEWS WEB
+- 簡単に他のサイトも追加可能
+
+### データクリーニング
+
+- 先頭の番号を自動削除
+- 末尾の日付・時刻を自動削除
+- 重複URLの自動削除
+- 不要なスペースの整理
+
+## 📁 ファイル構成
+```
+web-scraper/
+├── scrape_news.py              # 基本版
+├── scraper_improved.py         # エラーハンドリング付き
+├── multi_site_scraper.py       # 複数サイト対応
+├── scraper_with_cleaning.py    # データクリーニング付き
+└── README.md
+```
+
+## 🚀 使い方（各バージョン）
+
+### 基本版
+```bash
+python3 scrape_news.py
+```
+
+### エラーハンドリング付き
+```bash
+python3 scraper_improved.py
+```
+
+### 複数サイト対応
+```bash
+python3 multi_site_scraper.py
+```
+
+### データクリーニング付き（推奨）
+```bash
+python3 scraper_with_cleaning.py
+```
+
+
 ## 🔜 今後の改善予定
 
 - [ ] 複数のニュースサイトに対応
